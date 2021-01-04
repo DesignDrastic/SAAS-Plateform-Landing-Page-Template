@@ -1,0 +1,137 @@
+/* Google font api */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Noto+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/* vars */
+:root {
+  --clr-title: #656c6a;
+	--clr-dark-blue: #267baa;
+	--clr-light-blue: #5ebad1;
+	--primary-ff: 'Karla';
+	--hero-height: 70vh;
+	--line-width: 200px;
+	--transition: .5s;
+}
+body {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background: radial-gradient(#5ebad1, #267baa);
+}
+/* logo */
+.account-logo {
+	width: 175px;
+	margin: 25px 0;
+}
+/* Form elements */
+.form-group {
+	position: relative;
+}
+.form-group input {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	font-family: var(--primary-ff);
+  font-weight: 500;
+	color: #6c6c6c;
+	border-radius: 3px;
+	border: 1px solid rgba(0, 0, 0, .2);
+	padding-left: 40px;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+	outline: none;
+}
+.form-group input:hover {
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, .15) inset;
+	border-color: #6c6c6c;
+}
+.form-group input:focus {
+	border-color: var(--clr-dark-blue);
+}
+.form-group img {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	color: #6c6c6c;
+}
+
+.form-btn {
+	position: relative;
+	width: 100%;
+	height: 40px;
+	background: var(--clr-dark-blue);
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	font-family: var(--primary-ff);
+  font-weight: 600;
+	-webkit-transition: all .5s;
+	   -moz-transition: all .5s;
+	    -ms-transition: all .5s;
+	     -o-transition: all .5s;
+	        transition: all .5s;
+	cursor: pointer;
+	box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .15);
+}
+.form-btn:hover {
+	background: var(--clr-light-blue);
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .3);
+}
+.dd-link {
+  font-family: var(--primary-ff);
+  color: var(--clr-title);
+  font-weight: 600;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: all .25s;
+}
+.dd-link:hover {
+  color: var(--clr-dark-blue);
+  text-decoration: none;
+}
+.dd-link::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--clr-dark-blue);
+  transition: var(--transition);
+}
+.dd-link:hover::after {
+  width: 100%;
+}
+
+/* Cards */
+.account-card {
+	background: #fff;
+	box-shadow: 0 7px 15px 0 rgba(0, 0, 0, .15);
+	padding: 25px;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.account-title {
+	font-family: var(--primary-ff);
+	color: #6c6c6c;
+  font-weight: 700;
+}
+.account-card-bottom {
+	background: #f5f7f9;
+	padding: 15px;
+	margin: -25px;
+	margin-top: 0;
+}
+.pr-lbl {
+	padding: 0;
+	margin: 0;
+	font-family: var(--primary-ff);
+	color: #6c6c6c;
+}
